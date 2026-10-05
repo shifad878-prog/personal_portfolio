@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg shadow sticky-top" style="background-color: #061A26;">
+
+        <div class="container-fluid">
+
+            <!-- Logo / Name -->
+            <a class="navbar-brand text-white fw-bold" href="#">
+                <span class="text-info">&lt;/&gt;</span>
+                Shifa
+            </a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Download CV -->
+                <a href="./assets/Shifa-Khan-CV.pdf" download class="btn text-white" style="background-color: #00BFFF;">
+                    <i class="bi bi-download me-2"></i> Download CV
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="container-fluid px-4 py-5 w-100" style="background: linear-gradient(135deg, #061A26, #003B5C);">
+
+        <div class="container col-xxl-8">
+
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+                <!-- Profile Image -->
+                <div class="col-10 col-sm-8 col-lg-6 profile-animation">
+
+                    <img src="./images/profile.png" class="d-block mx-lg-auto img-fluid w-75 rounded-circle shadow"
+                        alt="Profile" width="700" height="500" loading="lazy">
+
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6 text-white hero-content">
+
+                    <p class="mb-1">Hello, I'm</p>
+
+                    <h1 class="display-5 fw-bold lh-1 mb-2">
+                        <span class="name-animation">Shifa Khan</span>
+                    </h1>
+
+                    <h2 class="mb-3">
+                        <span class="developer-animation">
+                            <span class="cyan-text">Web</span> <span class="white-text">Developer</span>
+                        </span>
+                    </h2>
+
+                    <p class="lead">
+                        I build modern, responsive and user-friendly websites
+                        using HTML, CSS, Bootstrap and JavaScript. I love turning
+                        ideas into real, interactive web experiences.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4">
+
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 cv-btn">
+                            View My Work →
+                        </button>
+
+                        <button type="button" class="btn btn-outline-light btn-lg px-4">
+                            Contact Me
+                        </button>
+
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-4 fs-4">
+
+                        <a href="#" class="text-white">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- javascript  -->
+    <script src="./bootstrap.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #061A26 !important;
+}
+
+/* Navbar links */
+.navbar .nav-link {
+    color: white !important;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+    color: #00BFFF !important;
+}
+
+/* Active link */
+.navbar .nav-link.active {
+    color: #00BFFF !important;
+}
+
+/* Navbar brand */
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+/* Download CV button */
+.cv-btn {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+}
+
+.cv-btn:hover {
+    background-color: #009ACD;
+    color: white;
+}
+
+
+/* =======================
+   Hero Section
+========================= */
+
+.hero-content {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+
+/* =========================
+   Name Animation
+========================= */
+
+.name-animation {
+    display: inline-block;
+    animation: nameScale 2s ease-in-out infinite alternate;
+}
+
+.cyan-text{
+    color: #009ACD;
+}
+
+@keyframes nameScale {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+
+/* =========================
+   Developer Text Animation
+========================= */
+
+.developer-animation {
+    display: inline-block;
+    border-right: 3px solid white;
+    padding-right: 5px;
+    white-space: nowrap;
+    animation: cursorBlink 0.7s step-end infinite;
+}
+
+@keyframes cursorBlink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes developerAnimation {
+
+    0% {
+        opacity: 0.6;
+        transform: translateY(8px) scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1.05);
+    }
+}
+
+
+/* =========================
+   Profile Image Animation
+========================= */
+
+.profile-animation {
+    animation: profileAnimation 2s ease-out;
+}
+
+.profile-animation img {
+    animation: profileFloat 3s ease-in-out infinite alternate;
+}
+
+@keyframes profileAnimation {
+
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes profileFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.cv-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   Social Icons
+========================= */
+
+.d-flex a {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.d-flex a:hover {
+    transform: translateY(-5px) scale(1.15);
+    opacity: 0.8;
+}
+
+
+/* =========================
+   Content Entrance Animation
+========================= */
+
+@keyframes fadeInLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
